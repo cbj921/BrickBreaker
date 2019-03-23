@@ -23,12 +23,12 @@ cc.Class({
         this.startGame();
 
         // 物理系统debug绘制
-        cc.director.getPhysicsManager().debugDrawFlags = cc.PhysicsManager.DrawBits.e_aabbBit |
+        /*cc.director.getPhysicsManager().debugDrawFlags = cc.PhysicsManager.DrawBits.e_aabbBit |
         cc.PhysicsManager.DrawBits.e_pairBit |
         cc.PhysicsManager.DrawBits.e_centerOfMassBit |
         cc.PhysicsManager.DrawBits.e_jointBit |
         cc.PhysicsManager.DrawBits.e_shapeBit
-        ;
+        ;*/
     },
 
     init (){
@@ -38,7 +38,7 @@ cc.Class({
         this.gameView.init(this);
         this.ball.init(this);
         this.paddle.init(this);
-        this.brickLayout.init();
+        this.brickLayout.init(this.brickLayout.bricksNumber);
         this.overPanel.init(this);
     },
 

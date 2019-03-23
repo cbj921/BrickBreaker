@@ -4,11 +4,12 @@ cc.Class({
 
     properties: {
         score:0,
-        brickNumber:49,
+        brickNumber: 30,
     },
     
     init (){
         this.score = 0;
+        this.brickNumber = 30;
     },
 
     addScore(score){
